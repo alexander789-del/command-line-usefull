@@ -1,4 +1,4 @@
-### XR
+### show command XR
 
 ```sh
 show bgp ipv4 unicast neighbors
@@ -16,5 +16,19 @@ Neighbor        Spk    AS MsgRcvd MsgSent   TblVer  InQ OutQ  Up/Down  St/PfxRcd
 172.16.168.17     0 150381 4281667 63158863 565326724    0    0     8w2d          3
 172.27.254.21     0 24492  292477  249749 565327368    0    0     6w0d          2
 202.79.31.9       0 24492 116204598  249754 565327368    0    0    12w6d    1055568
+</pre>
+
+
+###  commit confirmed minutes x
+
+```sh
+ commit confirmed minutes 6
+```
+<pre>
+ commit confirmed minutes 6
+ 
+! it will rollback the previous after 6 minutes
+! Verify new setup
+ping
 </pre>
 
